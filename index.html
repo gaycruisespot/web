@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruising Connect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cruising Connect</h1>
+    <p>Find and share local cruising spots discreetly.</p>
+  </header>
+
+  <main>
+    <section id="submit-spot">
+      <h2>Submit a Cruising Spot</h2>
+      <form id="spotForm">
+        <input type="text" name="location" placeholder="Location name or area" required>
+        <textarea name="description" placeholder="Quick description (optional)"></textarea>
+        <button type="submit">Submit Spot</button>
+      </form>
+      <p id="submissionStatus"></p>
+    </section>
+
+    <section id="spot-list">
+      <h2>Recent Spots</h2>
+      <ul id="spotsContainer"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
